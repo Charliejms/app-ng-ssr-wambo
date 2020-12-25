@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "app-ng-ssr-wambo"
+    }
+  },
+  "defaultProject": "app-ng-ssr-wambo",
+  "cli": {
+    "analytics": false
+  }
 }
