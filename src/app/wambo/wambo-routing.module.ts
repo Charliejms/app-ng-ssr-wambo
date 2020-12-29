@@ -1,10 +1,27 @@
 import { NgModule } from '@angular/core'
-import { CommonModule } from '@angular/common'
+import { RouterModule, Routes } from '@angular/router'
+import { ManagementComponent } from './components/management/management.component'
+
+const routers: Routes = [
+  {
+    path: '',
+    component: ManagementComponent,
+    children: [
+      {
+        path: '',
+        redirectTo: '',
+        pathMatch: 'full',
+      },
+    ],
+  },
+]
 
 @NgModule({
-  declarations: [],
   imports: [
-    CommonModule,
+    RouterModule.forChild(routers),
+  ],
+  exports: [
+    RouterModule,
   ],
 })
 export class WamboRoutingModule { }
