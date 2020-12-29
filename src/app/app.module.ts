@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core'
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { AppRoutingModule } from './app-routing.module'
 import { AppComponent } from './app.component'
+import { WamboModule } from './wambo/wambo.module'
 
 @NgModule({
   declarations: [
@@ -13,6 +14,7 @@ import { AppComponent } from './app.component'
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    WamboModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
