@@ -1,8 +1,11 @@
 import { NgModule } from '@angular/core'
 import { CommonModule } from '@angular/common'
+import { LanguageComponent } from './language.component'
 
 @NgModule({
-  declarations: [],
+  declarations: [
+    LanguageComponent,
+  ],
   imports: [
     CommonModule,
   ],
